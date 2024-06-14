@@ -16,7 +16,7 @@ const LoginPage = () => {
   const fetchData = async () => {
     try {
       setError('');
-      const response = await axios.post('http://localhost:8080/login', {
+      const response = await axios.post('https://refreshing-expression-production.up.railway.app/login', {
         username,
         password,
       });

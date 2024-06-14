@@ -15,7 +15,7 @@ const RegisterPage = () => {
   const handleRegister = async () => {
     try {
       setError('');
-      const response = await axios.post('http://localhost:8080/new', {
+      const response = await axios.post('https://refreshing-expression-production.up.railway.app/new', {
        userName: username,
         password,
        emailId: email,

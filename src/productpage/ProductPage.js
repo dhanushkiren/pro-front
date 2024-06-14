@@ -80,7 +80,7 @@ const ProductPage = ({ priceFilter, updateDataInWishList }) => {
   useEffect(() => {
 
     // Fetch data using Axios when the component mounts
-    axios.get('http://localhost:8080/product/allProduct')
+    axios.get('https://refreshing-expression-production.up.railway.app/product/allProduct')
       .then(response => {
         var storeLocale = [];
         var storeMaster = [];
