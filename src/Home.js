@@ -1,8 +1,6 @@
-import React, { useState } from 'react';
-import ProductPage from './productpage/ProductPage';
-import Sidebar from '../src/sidebar/sidebar';
-import Navbar from './Navbar';
-
+import React, { useState } from "react";
+import ProductPage from "./productpage/ProductPage";
+import Sidebar from "../src/sidebar/sidebar";
 
 const Home = ({ updateDataInWishList }) => {
   const [priceFilter, setPriceFilter] = useState(null);
@@ -25,16 +23,18 @@ const Home = ({ updateDataInWishList }) => {
     setCart(newCart);
   };
 
-
   return (
     <div>
-      <div className='container'>
-        <div className='row'>
-          <div className='col-2'>
+      <div className="container">
+        <div className="row">
+          <div className="col-2">
             <Sidebar handlePriceFilter={handlePriceFilter} />
           </div>
-          <div className='col-10'>
-            <ProductPage priceFilter={priceFilter} updateDataInWishList={updateDataInWishList} />
+          <div className="col-10">
+            <ProductPage
+              priceFilter={priceFilter}
+              updateDataInWishList={updateDataInWishList}
+            />
           </div>
         </div>
       </div>

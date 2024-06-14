@@ -1,16 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom'; // Import Link
 import './ProductPage.css';
 import axios from 'axios';
-import FavoriteBorderIcon from '@mui/icons-material/FavoriteBorder';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Dialog from '@mui/material/Dialog';
 import DialogActions from '@mui/material/DialogActions';
 import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
-import FavoriteIcon from '@mui/icons-material/Favorite';
-import Navbar from '../Navbar';
 
 
 const ProductPage = ({ priceFilter, updateDataInWishList }) => {
