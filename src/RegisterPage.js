@@ -16,7 +16,7 @@ const RegisterPage = () => {
     try {
       setError("");
       const response = await axios.post(
-        "https://refreshing-expression-production.up.railway.app/new",
+        "https://cozy-perfection-production.up.railway.app/new",
         {
           userName: username,
           password,
